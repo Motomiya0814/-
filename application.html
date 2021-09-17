@@ -1,11 +1,78 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>application1.index</title>
+	<link rel="stylesheet" type="text/css" href="style10.css">
+	<link rel="stylesheet" href="appResponsive.css" media="screen and (max-width: 900px)">
 </head>
 <body>
-	
+<!-- header -->
+   <header class="header">
+     <nav class="navbar">
+       <a href="#" class="nav-logo">Spanish</a>
+       <ul class="nav-menu">
+         <li class="nav-item">
+           <a href="#" class="nav-link" href="#top-page">Top</a>
+         </li>
+         <li class="nav-item">
+           <a href="#" class="nav-link" href="#service">service</a>
+         </li>
+         <li class="nav-item">
+           <a href="#" class="nav-link" href="#question">question</a>
+         </li>
+         <li class="nav-item">
+           <a href="#" class="nav-link">Contact</a>
+         </li>
+       </ul>
+       <div class="hamburger">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+     </nav>
+   </header>
+ <!-- mainpage -->
+ <section class="mainpage" id="top-page">
+ <div id="main">
+ 	<h1 id="message">Let's learn Spanish!!</h1>
+
+ 	<a href="#section-title" id="start"><button id="startButton">Get started!</button></a>
+ </div>
+</section>
+
+<section class="Section" id="service">
+  <h2 id="section-title">How to use this app</h2>
+  <h3 class="semi-title">the first step</h3>
+  <p class="info">First off, what you have to do is just come down to the question section and you can see the question of voacablary and work on it.</p>
+  <h3 class="semi-title">the second step</h3>
+  <p class="info">After you work on that question, you may have some words you do not know or are not able to remember. so please make sure to take notes of it. </p>
+  <h3 class="semi-title">the final step</h3>
+  <p class="info">Through that vocablary you have worked on, you need to try using that vocablary in conversation and keep working on output to get comprehension of vocablary.</p>
+</section>
+  
+<!-- question -->
+<section class="Section" id="question">
+    <h2 id="section-title" >Question</h2>
+    <p id="instruction">以下に表示される問題に回答してください</p>
+<!-- 問題 -->
+    <p id="js-question" role="alert">～の意味を以下から選んでください</p>
+   <div id="boxes">
+    <button class="choices">answer</button>
+    <button class="choices">answer</button>
+    <button class="choices">answer</button>
+    <button class="choices">answer</button>
+   </div>
+
+   <div id="results"></div>
+</section>
+    
+
+
+
+
+  
+	<script type="text/javascript" src="application.js"></script>
 </body>
 </html>
